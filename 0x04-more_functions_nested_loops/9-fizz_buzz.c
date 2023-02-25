@@ -1,31 +1,40 @@
 #include <stdio.h>
+
 /**
- * main - function that checks for uppercase character.
- * Return: 0
+ * main - print 1 to 100, except certain multiples
+ *
+ * Description: print numbers 1 to 100, if number
+ * is multiple of 3 print "Fizz" instead, if number
+ * is multiple of 5 print "Buzz" instead, if number
+ * is mulptiple of 3 and 5 print "FizzBuzz"
+ * Return: 0 on Success
  */
 int main(void)
 {
-	int h = 1;
+	int i = 2, j = 1;
 
-	while (h <= 100)
+	printf("%d", j);
+
+	while (i < 101)
 	{
-		if (h % 3 == 0 && h % 5 == 0)
-			printf("FizzBuzz ");
-		else if (h % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			if (h == 100)
-			{
-				printf("Buzz");
-				printf("\n");
-			}
-			else
-				printf("Buzz ");
+			printf(" FizzBuzz");
 		}
-		else if (h % 3 == 0)
-			printf("Fizz ");
+		else if (i % 3 == 0)
+		{
+			printf(" Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf(" Buzz");
+		}
 		else
-			printf("%d ", h);
-	h++;
+		{
+			printf(" %d", i);
+		}
+		i++;
 	}
-return (0);
+	printf("\n");
+	return (0);
 }

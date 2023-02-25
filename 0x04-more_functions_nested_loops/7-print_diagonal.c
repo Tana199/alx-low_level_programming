@@ -1,15 +1,24 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_diagonal - print diagonal line
+ * @n: line segments to print
  */
-int main(void)
+void print_diagonal(int n)
 {
-    print_diagonal(0);
-    print_diagonal(2);
-    print_diagonal(10);
-    print_diagonal(-4);
-    return (0);
+	int i;
+	int j;
+
+	if (n > 0)
+	{
+		for (i = 0; i < n; i++)
+		{
+			for (j = 0; j < i; j++)
+				_putchar(' ');
+			_putchar(92);
+			_putchar('\n');
+		}
+	}
+	else
+		_putchar('\n');
 }
