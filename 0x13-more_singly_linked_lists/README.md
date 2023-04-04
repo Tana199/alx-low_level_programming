@@ -1,3 +1,4 @@
+Tasks
 0. Print list
 mandatory
 Write a function that prints all the elements of a listint_t list.
@@ -104,4 +105,3 @@ Prototype: listint_t *find_listint_loop(listint_t *head);
 Returns: The address of the node where the loop starts, or NULL if there is no loop
 You are not allowed to use malloc, free or arrays
 You can only declare a maximum of two variables in your function
-
